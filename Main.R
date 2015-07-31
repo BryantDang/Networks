@@ -1,5 +1,15 @@
+## Author: Bryant Dang
+## 
+## The purpose of this application is to convert Pajek network files into VMD visualization files, in order to utilize the 3D stereo features in VMD
+##
+## Required Pacakges:
+##   gdata, svDialogs, gWidgets, gWidgetstcltk
+##
+## Note: This application uses the package gWidgets with TCL/TK to create the main GUI windows. 
+##       If using RStudio, the calls to gWidgets will produce warnings, which may be ignored.
+
 #Clear variables in the workspace 
-rm(list = ls());
+rm(list = ls())
 
 #Loads libraries
 library(gdata)

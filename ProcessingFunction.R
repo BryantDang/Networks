@@ -307,7 +307,7 @@ readfiles <- function(h,...)
   check.integer <- function(N) {
     !length(grep("[^[:digit:]]", as.character(N)))
   }  
-  partitionDialogWindow <<- gwindow("Pajekto3DStereo")
+  partitionDialogWindow <<- gwindow("Visualization Menu")
   tbl <- glayout(cont=partitionDialogWindow, horizontal=TRUE)
   tbl[1,1] <- "Cluster:" 
   tbl[1,2] <- "   Select Color:"

@@ -1,8 +1,6 @@
-netHandler <- function(netFile,...)
-{
-  nPath <<- guiDlgDir(title = "Select Directory containing Network File", dir = nPath)
-  if (length(dir(path=nPath, pattern=".net"))<1)
-  {
+netHandler <- function(netFile) {
+  nPath <<- dlgDir(title = "Select Directory containing Network File", dir = nPath)$res
+  if (length(dir(path=nPath, pattern=".net")) < 1) {
     winDialog("ok", "Selected Directory has no Network Files!")
     nPath <<- snPath
   } else {
@@ -12,11 +10,9 @@ netHandler <- function(netFile,...)
   }
 }
 
-cluHandler <- function(cluFile,...)
-{
-  cPath <<- guiDlgDir(title = "Select Directory containing Network File", dir = nPath)
-  if (length(dir(path=cPath, pattern=".clu"))<1)
-  {
+cluHandler <- function(cluFile) {
+  cPath <<- dlgDir(title = "Select Directory containing Network File", dir = nPath)$res
+  if (length(dir(path=cPath, pattern=".clu")) < 1) {
     winDialog("ok", "Selected Directory has no Cluster Files!")
     cPath <<- scPath
   } else {
@@ -25,11 +21,9 @@ cluHandler <- function(cluFile,...)
   }
 }
 
-vecHandler <- function(vecFile,...)
-{
-  vPath <<- guiDlgDir(title = "Select Directory containing Vector File", dir = nPath)
-  if (length(dir(path=vPath, pattern=".vec"))<1)
-  {
+vecHandler <- function(vecFile) {
+  vPath <<- dlgDir(title = "Select Directory containing Vector File", dir = nPath)$res
+  if (length(dir(path=vPath, pattern=".vec")) < 1) {
     winDialog("ok", "Selected Directory has no Vector Files!")
     vPath <<- svPath
   } else {
@@ -38,12 +32,10 @@ vecHandler <- function(vecFile,...)
   }
 }
 
-infohandler1 <- function(h,...)
-{
-  winDialog("ok", "Help yourself!")
+infohandler1 <- function(h,...) {
+  winDialog("ok", "Not Available")
 }
 
-infohandler2 <- function(h,...)
-{
-  winDialog("ok", "Help yourself!")
+infohandler2 <- function(h,...) {
+  winDialog("ok", "Not Available")
 }

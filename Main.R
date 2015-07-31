@@ -8,6 +8,10 @@ library(gWidgets)
 library(gWidgetstcltk)
 options(guiToolkit='tcltk')
 
+#Source Function Files
+source("IOFunctions.R")
+source("ProcessingFunction.R")
+
 nPath <- getwd()
 cPath <- 0
 vPath <- 0

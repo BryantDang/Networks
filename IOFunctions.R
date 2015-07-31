@@ -1,3 +1,4 @@
+# Functions for loading Pajek network files
 netHandler <- function(netFile) {
   nPath <<- dlgDir(title = "Select Directory containing Network File", dir = nPath)$res
   if (length(dir(path=nPath, pattern=".net")) < 1) {

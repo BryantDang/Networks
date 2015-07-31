@@ -1,6 +1,6 @@
 #PajekTo3DStereo
 
-PajekTo3DStereo is a file converter with a Tcl/Tk GUI built in R. This project was published and presented as a demonstration at the American Medical Informatics Association Annual Symposium 2014.
+PajekTo3DStereo is a 3D network file converter with a Tcl/Tk GUI built in R. This project was published and presented as a demonstration at the American Medical Informatics Association Annual Symposium 2014.
 
 Dang, B.S., Bhavnani S.K. Pajekto3DStereo: Enabling Generation and Interaction with 3D Stereo Networks. Proceedings of AMIA (2014).
 [PDF Link](http://www.skbhavnani.com/DIVA/papers/Dang-Bhavnani-3D-Demo-AMIA-2014.pdf)

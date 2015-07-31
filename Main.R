@@ -8,9 +8,6 @@
 ## Note: This application uses the package gWidgets with TCL/TK to create the main GUI windows. 
 ##       If using RStudio, the calls to gWidgets will produce warnings, which may be ignored.
 
-#Clear variables in the workspace 
-rm(list = ls())
-
 #Loads libraries
 library(gdata)
 library(svDialogs)
@@ -27,7 +24,7 @@ cPath <- 0
 vPath <- 0
 enable <- 0
 
-
+# Initialize File Selecction Menu
 FileWindow <- gwindow("Pajekto3DStereo - File Selection Menu")
 fileTbl <- glayout(cont=FileWindow, horizontal=TRUE)
 fileTbl[1,1] <- "Network File (Req):"

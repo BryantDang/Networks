@@ -1,3 +1,4 @@
+# Function for converting Pajek data into VMD data
 readfiles <- function(h,...)
 { 
   #Creates conversion function from Pajek to VMD
